@@ -1,0 +1,253 @@
+body, html {
+  min-height: 100vh;
+  margin: 0;
+}
+.navbar {
+  font-size: 18px;
+  padding: 10px 0;
+}
+.navbar-nav, .navbar2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.navbar-nav button{
+  background: none;
+  border: none;
+  color: #73542f;
+  cursor: pointer;
+}
+.navbar2 button {
+  border: none;
+  color: white; /* Color del texto, ajusta según sea necesario */
+  cursor: pointer;
+}
+.divContainer {
+  display: grid;
+  grid-column: 25% 70%;
+}
+.caja2 {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 80vw;
+  margin-right: 0%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #73542f;
+}
+
+.card {
+  width: 16rem; 
+  height: 35rem; 
+  display: flex;
+  flex-direction: column; /* Aplica flexbox en columna para alinear elementos verticalmente */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #73542f;
+  margin: 20px;
+}
+.card img {
+  width: 100%;
+  height: auto; /* Ajusta la altura de la imagen automáticamente para evitar distorsiones */
+  border-radius: 8px 8px 0 0;
+}
+.card-body {
+  flex-grow: 1; /* Para que el contenido ocupe el espacio restante */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.btn {
+  margin-top: auto; /* Coloca el botón al final del contenedor */
+  color: #73542f;
+  border-color: #73542f;
+}
+.btn:hover {
+    color: #73542f;
+    border-color: #73542f;
+}
+.cuerpo {
+  min-height: 100vh;
+  background-image: url(imagenes/fondo2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header {
+  width: 100%;
+  z-index: 1000;
+}
+footer {
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+.botonimagen{
+  background-image: url(imagenes/back-button.png);
+  background-size: cover;
+    background-color: transparent;
+    width: 10vh;
+    height: 10vh;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    margin: auto; /* Agrega este margen para centrar horizontalmente */
+    display: block;
+
+}
+.botonimagen2{
+  background-image: url(imagenes/back-button-2.png);
+  background-size: cover;
+    background-color: transparent;
+    width: 10vh;
+    height: 10vh;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    margin: auto; 
+    display: block;
+}
+
+.instagram {
+  background: none;
+  background-image: url(imagenes/instagram.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  vertical-align: middle; 
+}
+.github {
+  background: none;
+  background-image: url(imagenes/github.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.linkedin {
+  background: none;
+  background-image: url(imagenes/linkedin.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  vertical-align: middle; 
+}
+
+h1 {
+  font-size: 48px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #73542f;
+  text-align: center;
+}
+.texto {
+  margin-left: 20px;
+  color: #73542f;
+  font-size: 100%;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+h2 {
+    font-size: 38px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #73542f;
+  text-align: center;
+}
+.izq {
+    flex: 1;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.contenedor {
+  margin-left: 0%;
+    width: 80vw;
+}
+.boton_enviar{
+    width: 100%;
+}
+
+.carta-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row; /* Cambiado a row para colocar el título y la descripción a la derecha de la imagen */
+  width: 25rem; 
+  height: 15rem; 
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #73542f; 
+  border-radius: 8px;
+  box-shadow: 0px 0vw 1vw rgba(115, 84, 47, 1);
+}
+
+.carta-image {
+  width: 100%; 
+  max-height: 15vh; 
+  object-fit: contain; /* Para asegurarse de que la imagen se ajuste correctamente */
+  border-radius: 8px; 
+}
+
+.carta-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column; /* Cambiado a column para apilar el título y la descripción */
+  padding-left: 10px; /* Espaciado a la izquierda para separar el título y la descripción de la imagen */
+}
+
+.carta-title {
+  font-size: 24px;
+  margin-bottom: 10px; /* Ajuste el espacio entre el título y la descripción */
+}
+
+.carta-description {
+  color: #73542f; 
+}
+
+.cartas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.fondo-carta{
+  background-image: url(/imagenes/codigo.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex; 
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+.divContainer{
+    grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+  }
+  .caja2 {
+    width: 100%; /* Ajusta el ancho de la caja para que ocupe toda la pantalla */
+  }
+  .contenedor {
+    width: 100%; /* Ajusta el ancho del contenedor principal para que ocupe toda la pantalla */
+  }
+}
