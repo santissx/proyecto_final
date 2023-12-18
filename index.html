@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="index.css">
+
+    
 </head>
 
 <body>
@@ -24,12 +26,11 @@
                     <button class="nav-link btn" id="acerca" onclick="show('acercademi')">
                         Acerca de mi
                     </button>
-                    Acerca de mi
+                    
                     </button>
                 </li>
                 <li class="nav-item">
-
-                    <button class="nav-link btn" id="habilidades" onclick="show('skills')">
+                    <button class="nav-link btn " id="habilidades" onclick="show('skills')">
                         Skills
                     </button>
                 </li>
@@ -53,50 +54,49 @@
     <div class="inicio mx-auto" id="inicio">
         <div class="cuerpo">
 
-            <div class="card" >
+            <div class="card " >
                 <img src="imagenes/user.png" class="card-img-top" alt="usuario" />
                 <div class="card-body">
                     <h5 class="card-title">Acerca de Mi</h5>
-                    <p class="card-text">
-                        En esta sección encontrarás información personal que destaca quién soy. Es una ventana para conocernos mejor y entender cómo mi trayectoria ha influido en mi desarrollo.
+                    <p class="card-text texto-carta" id="carta1">   
                     </p>
-                    <button class="btn btn-primary bg-dark" id="acerca" onclick="show('acercademi')">
+                    <button class="btn btn-primary bg-dark botoncolor" id="acerca" onclick="show('acercademi')">
                         Ver mas
                     </button>
                 </div>
             </div>
-            <div class="card" class="card" >
+            <div class="card "  >
                 <img src="imagenes/puzzle.png" class="card-img-top" alt="skills" />
                 <div class="card-body">
                     <h5 class="card-title">Skills</h5>
-                    <p class="card-text">
+                    <p class="card-text texto-carta" id="carta2">
                         En esta sección podras descubrir los lenguajes que domino
                     </p>
-                    <button class="btn btn-primary bg-dark" id="habilidades" onclick="show('skills')">
+                    <button class="btn btn-primary bg-dark botoncolor" id="habilidades" onclick="show('skills')">
                         Ver mas
                     </button>
                 </div>
             </div>
-            <div class="card" >
+            <div class="card " >
                 <img src="imagenes/project.png" class="card-img-top" alt="proyectos" />
                 <div class="card-body">
                     <h5 class="card-title">Proyectos</h5>
-                    <p class="card-text">
+                    <p class="card-text texto-carta" id="carta3">
                         Esta sección destaca los proyectos en los que he trabajado, es decir, los desafios que he superado
                     </p>
-                    <button class="btn btn-primary bg-dark" id="proy" onclick="show('proyectos')">
+                    <button class="btn btn-primary bg-dark botoncolor" id="proy" onclick="show('proyectos')">
                         Ver mas
                     </button>
                 </div>
             </div>
-            <div class="card" >
+            <div class="card " >
                 <img src="imagenes/phones.png" class="card-img-top" alt="contacto" />
                 <div class="card-body">
                     <h5 class="card-title">Contacto</h5>
-                    <p class="card-text">
-                        ¿Listo para conectarnos? Aquí encontrarás información para enviarme un mensaje, preguntar sobre oportunidades de colaboración o simplemente saludar.
+                    <p class="card-text texto-carta" id="carta4">
+
                     </p>
-                    <button class="btn btn-primary bg-dark" id="contacto" onclick="show('formulario')">
+                    <button class="btn btn-primary bg-dark botoncolor" id="contacto" onclick="show('formulario')">
                         Ver mas
                     </button>
                 </div>
@@ -106,30 +106,15 @@
 
     <div class="acercademi" id="acercademi">
         <div class="cuerpo">
-            <button type="button" class="botonimagen btn btn-dark" id="home" onclick="show('inicio')"></button>
+            <button type="button" class="botonimagen btn btn-dark botoncolor2" id="home" onclick="show('inicio')"></button>
             <div class="caja2">
                 <img src="imagenes/IMG-20230222-WA0046.jpg" height="50%" alt="foto perfil" class="img" />
-                <div class="texto-caja">
+                <div>
                     <h1>Acerca de mi</h1>
-                    <p class="texto">
-                        Desde mi infancia, he sentido una profunda fascinación por
-                        comprender la tecnología, lo que me condujo, durante mi
-                        adolescencia, a sumergirme en el mundo de la informática a través
-                        del soporte técnico y el ensamblaje de computadoras, tanto para
-                        amigos como para la mía propia. Actualmente, soy estudiante de la
-                        Tecnicatura Superior en Desarrollo de Software en el ISFD "Felix
-                        Atilio Cabrera". Me considero una persona responsable y proactiva,
-                        con la capacidad de aprender fácilmente, ya sea de forma
-                        autodidacta o en entornos más formales. En mi búsqueda constante
-                        de crecimiento y desarrollo, aspiro a formar parte de una empresa
-                        que me brinde la oportunidad de desempeñarme en diversas tareas,
-                        desafiándome a adquirir nuevos conocimientos y perfeccionar mis
-                        habilidades. Mi enfoque en las buenas prácticas de desarrollo me
-                        permite colaborar eficazmente tanto en equipos de trabajo como de
-                        manera independiente.
+                    <p class="texto" id="demo">
                         <br>
                         <div class="cv">
-                           <a href="Cv_Santiago_Bernardez.pdf"><button class="btn-descarga btn btn-primary bg-dark" style="width: 100%;">
+                           <a href="imagenes/Cv_Santiago_Bernardez.pdf"><button class="btn-descarga btn btn-primary bg-dark" style="width: 100%;">
                             Descargar CV
                         </button></a> 
                     </p>
